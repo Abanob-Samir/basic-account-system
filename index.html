@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>calculator</title>
+  <link rel="stylesheet" href="css/all.min.css" >
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css" >
+</head>
+
+<body class="bodycolordark">
+  <button class="col-1 btn btn-light" id="mode" onclick="changeMode()"> <i class="fa-solid fa-sun"></i> </button>
+<h1>Our Product</h1>
+<div class="container border border-5 border-color-grey ">
+  
+  <div class="row"><input type="text" placeholder="Title" id="Title" class="col-12"></div>
+  <div class="row">
+    <input type="number" placeholder="Price"  id="Price"class="col-2 ">
+    <input type="number" placeholder="Taxes" id="Taxes" class="col-2 ">
+    <input type="number" placeholder="Transfer Cost" id="Transfer Cost" class="col-3">
+    <input type="number" placeholder="Discount"  id="Discount"class="col-2">
+    <input type="number" placeholder="Total" id="Total" class="col-2">
+  </div>
+  <div class="row"><input type="text" placeholder="Count" class="col-12"></div>
+  <div class="row"><input type="text" placeholder="Branch" class="col-12"></div>
+  <div class="row"><button id="creat" class="col-12 btn btn-info">Creat</button></div>
+  
+</div>
+<h1 id="test">Our Product</h1>
+<div class="container-fluid border border-5 border-color-grey ">
+  
+  <div   class="row" >
+    <div id="output" claas="col-12"></div>
+     <table >
+      <thead>
+      <th>ID</th>
+      <th>Title</th>
+      <th>Price</th>
+      <th>Taxes</th>
+      <th>T:cost</th>
+      <th>Discount</th>
+      <th>Total</th>
+      <th>Department</th>
+      <th>Date</th>
+      <th>Action</th>
+    </thead>
+
+    <tbody id="table">
+
+    </tbody>
+     </table>
+     
+    
+  </div>
+ 
+<!-- Modal -->
+<div class="modal" tabindex="-1" >
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Edit Order</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row"><input type="text" placeholder="Title" id="Title" class="col-12"></div>
+        <div class="row">
+        <input type="number" placeholder="Price"  id="Price"class="col-2 ">
+        <input type="number" placeholder="Taxes" id="Taxes" class="col-2 ">
+        <input type="number" placeholder="Transfer Cost" id="Transfer Cost" class="col-3">
+        <input type="number" placeholder="Discount"  id="Discount"class="col-2">
+        <input type="number" placeholder="Total" id="Total" class="col-2">
+      </div>
+      <div class="row"><input type="text" placeholder="Depatment" class="col-12"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-warning">Update</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  <script src="./JS/main.js"></script>
+   <script src="./JS/bootstrap.min.js"></script>
+</body>
+
+</html>
